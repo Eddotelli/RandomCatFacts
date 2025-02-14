@@ -1,0 +1,98 @@
+body {
+    /* Layout */
+    background-color: rgb(224, 243, 202); /* Sätter bakgrundsfärgen för hela sidan */
+
+    /* Position */
+    display: flex; /* Använder flexbox för att centrera innehållet */
+    justify-content: center; /* Centrerar innehållet horisontellt */
+    align-items: center; /* Centrerar innehållet vertikalt */
+}
+
+#frame {
+    /* Layout */
+    border-style: dotted; /* Sätter en prickad kant */
+    border-color: green; /* Sätter kantfärgen till grön */
+    background-color: lightgreen; /* Sätter bakgrundsfärgen till ljusgrön */
+    width: 1000px; /* Sätter bredden till 1000px */
+    max-width: 50%; /* Sätter maximal bredd till 50% av förälderelementet */
+    height: 1000px; /* Sätter höjden till 500px */
+    max-height: fit-content; /* Sätter maximal höjd till innehållets höjd */
+    overflow: auto; /* Lägger till scroll om innehållet överstiger ramen */
+    box-sizing: border-box; /* Inkluderar padding och border i elementets totala bredd och höjd */
+
+    /* Text */
+    text-align: center; /* Centrerar texten */;
+    font-family: 'Courier New', Courier, monospace; /* Sätter teckensnittet */
+    font-size: small; /* Sätter textstorleken till liten */
+
+    /* Position */
+    display: flex; /* Använder flexbox för att arrangera innehållet */
+    flex-direction: column; /* Arrangerar innehållet i en kolumn */
+    align-items: center; /* Centrerar innehållet horisontellt */
+    justify-content: center; /* Centrerar innehållet vertikalt */
+}
+
+#randomCatFact, #randomCatFacts {
+    /* Lägg till grundläggande stil för knapparna här */
+    padding: 10px 20px; /* Lägger till padding runt knapparna */
+    border: none; /* Tar bort kantlinjen */
+    background-color: #4CAF50; /* Grundfärg */
+    color: white; /* Textfärg */
+    cursor: pointer; /* Ändrar muspekaren till en hand när man hovrar över knappen */
+    font-size: 16px; /* Sätter textstorleken */
+    border-radius: 5px; /* Rundar hörnen på knapparna */
+    transition: background-color 0.3s; /* Lägg till en övergångseffekt för bakgrundsfärgen */
+}
+
+#randomCatFact:hover, #randomCatFacts:hover {
+    background-color: #4b45a0; /* Ändrar bakgrundsfärgen när man hovrar över knappen */
+}
+
+#titlefram {
+    /* Layout */
+    color: black; /* Sätter textfärgen till svart */
+}
+
+#catFact {
+    /* Layout */
+    margin: 20px; /* Lägger till marginal runt elementet */
+
+    /* Text */
+    font: optional;
+    font-size: small; /* Sätter textstorleken till liten */
+}
+
+#listOfCatFacts {
+    /* Layout */
+    margin: 20px; /* Lägger till marginal runt elementet */
+    max-width: fit-content; /* Sätter maximal bredd till innehållets bredd */
+    max-height: fit-content; /* Sätter maximal höjd till innehållets höjd */
+
+    /* Text */
+    font-size: small; /* Sätter textstorleken till liten */
+    line-height: 30px; /* Sätter radavståndet till 30px */
+
+    /* Position */
+    list-style-position: inside; /* Sätter listpunkterna innanför texten */
+    display: flex; /* Använder flexbox för att arrangera innehållet */
+    flex-direction: column; /* Arrangerar innehållet i en kolumn */
+    align-items: center; /* Centrerar innehållet horisontellt */
+    text-align: center; /* Centrerar texten */
+}
+
+#footer {
+    /* Text */
+    text-align: center; /* Centrerar texten */
+    font-family: 'Courier New', Courier, monospace; /* Sätter teckensnittet */
+    font-size: small; /* Sätter textstorleken till liten */
+
+    /* Position */
+    margin-top: 20px; /* Lägger till marginal ovanför elementet */
+    position: fixed; /* Fäster foten */
+    bottom: 0; /* Placera längst ner */
+    width: 100%; /* Sträck ut över hela sidans bredd */
+    text-align: center; /* Centrerar texten */
+    justify-content: space-between; /* Fördelar utrymmet jämnt mellan barnen */
+    align-items: center; /* Centrerar innehållet vertikalt */
+    padding: 1em; /* Lägger till padding runt elementet */
+}
